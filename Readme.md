@@ -1,11 +1,11 @@
 # Test Task – Web Application (ExtJS)
 ---
 
-## Technologies
-![ExtJS](https://img.shields.io/badge/ExtJS-6.0.0-blue?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square)
-![HTML5](https://img.shields.io/badge/HTML5-orange?style=flat-square)
-![CSS3](https://img.shields.io/badge/CSS3-blue?style=flat-square)
+## Technologies  
+![ExtJS](https://img.shields.io/badge/ExtJS-6.0.0-0078D7?style=for-the-badge&logo=extjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ---
 ## Description
