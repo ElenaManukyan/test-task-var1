@@ -3,7 +3,6 @@ Ext.define('MyExtGenApp.view.main.MainViewController', {
     alias: 'controller.mainviewcontroller',
 
     onGridCellClick: function(grid, location, cell, rowIndex, colIndex, e, eOpts) {
-        console.log('click!');
         var record = location.record;
         var column = location.column;
         
@@ -13,7 +12,7 @@ Ext.define('MyExtGenApp.view.main.MainViewController', {
     },
 
     showProductCard: function(record) {
-
+        // console.log(record);
         var win = Ext.create('Ext.window.Window', {
             title: 'Карточка товара: ' + record.get('name'),
             width: 400,
@@ -70,8 +69,25 @@ Ext.define('MyExtGenApp.view.main.MainViewController', {
                     stepValue: 0.1,
                     decimals: 2,
                     spinners: true,
-                    clearable: false
-
+                    clearable: false,
+                    // required: true,
+                    /*
+                    validators: [{
+                        type: 'number',
+                        message: 'Введите число'
+                    },{
+                        type: 'range',
+                        min: 0.01,
+                        message: 'Цена не может быть меньше 0.01'
+                    }],
+                    listeners: {
+                        change: function(field) {
+                            let form = field.up('formpanel');
+                            let btn  = form.down('button[text=Сохранить]');
+                            btn.setDisabled(!form.isValid());
+                        }
+                    }
+                        */
                 }, {
                     label: 'Кол-во:',
                     name: 'quantity',
@@ -406,7 +422,7 @@ Ext.define('MyExtGenApp.view.main.MainViewController', {
 
 
     clearFilters: function(button) {
-
+        
         if (!button || !button.isButton) return;
 
         var tab = button.up('[reference=productsTab]') || button.up('[itemId=productsTab]'); 

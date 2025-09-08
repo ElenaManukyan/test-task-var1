@@ -200,6 +200,8 @@ Ext.define('MyExtGenApp.view.main.MainView', {
                                 cell.removeCls('cell-red');
                             }
                             return value;
+                            
+                            // return '<span style="color: red; font-weight: bold">' + value + '</span>';
                         }
                     }]
                 }]

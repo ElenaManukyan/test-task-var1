@@ -29,6 +29,7 @@ Ext.define('MyExtGenApp.view.login.LoginView', {
             xtype: 'textfield',
             name: 'username',
             label: 'Пользователь:',
+            // bind: '{userLogin}',
             labelAlign: 'left',
             allowBlank: false,
             style: {
@@ -44,6 +45,7 @@ Ext.define('MyExtGenApp.view.login.LoginView', {
             xtype: 'passwordfield',
             name: 'password',
             label: 'Пароль:',
+            // bind: '{userPassword}',
             labelAlign: 'left',
             allowBlank: false,
             style: {

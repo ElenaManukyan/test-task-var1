@@ -11,6 +11,7 @@ Ext.define('MyExtGenApp.view.login.LoginViewController', {
 
     onSubmit: function() {
         var view = this.getView();
+        // var vm = this.getViewModel();
         var form = view;
         
         if (form.isValid()) {
@@ -18,6 +19,12 @@ Ext.define('MyExtGenApp.view.login.LoginViewController', {
             var username = values.username;
             var password = values.password;
             
+            /*
+            if (vm.isValidLogAndPass()) {
+                this.openMainWindow();
+            }
+                */
+
             if (username === 'admin' && password === 'padmin') {
                 this.openMainWindow();
             } else {
